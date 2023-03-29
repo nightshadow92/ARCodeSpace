@@ -1,4 +1,3 @@
-﻿#r "nuget:MegaApiClient/1.10.3"
 using CG.Web.MegaApiClient;
 using System.Text.Json;
 using System.Text.Json.Serialization;

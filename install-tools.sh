@@ -6,6 +6,6 @@ rm ./megacmd*.deb
 apt install npm -y
 npm i xdccjs
 
-
+dotnet publish  MegaUpload/MegaUpload.sln --sc true /p:PublishSingleFile=true -o mega
 apt install openjdk-8-jre-headless -y
 wget http://installer.jdownloader.org/JDownloader.jar

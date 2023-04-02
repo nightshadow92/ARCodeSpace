@@ -350,7 +350,9 @@ MigrationBackup/
 .ionide/
 
 
-
+*.mkv
+*.mp4
+./mega/*
 
 .vscode
 .vs

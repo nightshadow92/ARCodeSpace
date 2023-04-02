@@ -16,7 +16,7 @@ class Program {
 
             IEnumerable<INode> nodes = client.GetNodes();
             INode node = nodes.Single(x => x.Type == NodeType.Root);
-            client.UploadFile(@"log.txt", node);
+            client.UploadFile(File, node);
 
             client.Logout();
         }

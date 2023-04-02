@@ -8,6 +8,7 @@ let opts = {
     verbose: true, // Display download progress and jobs status                               - default: false
     botNameMatch: false,
    // path: '/workspaces/codespaces-blank'
+   path: process.cwd()
 }
 const xdccclient = new XDCC(opts)
 

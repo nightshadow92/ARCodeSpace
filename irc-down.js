@@ -12,7 +12,10 @@ let opts = {
 const xdccclient = new XDCC(opts)
 
 xdccclient.on('ready', async () => {
-    xdccclient.download('Ginpachi-Sensei', ['5765'])
+    xdccclient.download('Ginpachi-Sensei', ['5832'])
+    xdccclient.download('Ginpachi-Sensei', ['5838'])
+    xdccclient.download('Ginpachi-Sensei', ['5840'])
+    xdccclient.download('Ginpachi-Sensei', ['5845'])
 
     xdccclient.on('downloaded', fileInfo => {
         console.log(fileInfo.filePath)

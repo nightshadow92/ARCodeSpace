@@ -1,4 +1,4 @@
-node .\irc-down.js
+node irc-down.js
 gci -file | where {$_.name -match "subsplease"} | foreach {
-    .\mega\MegaUpload.exe --file $_.FullName
+    .\mega\MegaUpload --file $_.FullName
 }

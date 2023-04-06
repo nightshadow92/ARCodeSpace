@@ -1,4 +1,6 @@
 const XDCC = require('xdccjs').default
+const fs = require('fs');
+
 
 let opts = {
     host: 'irc.rizon.net', // IRC hostname                                                   - required
@@ -12,10 +14,11 @@ let opts = {
 const xdccclient = new XDCC(opts)
 
 xdccclient.on('ready', async () => {
-    xdccclient.download('Ginpachi-Sensei', ['5832'])
-    xdccclient.download('Ginpachi-Sensei', ['5838'])
-    xdccclient.download('Ginpachi-Sensei', ['5840'])
-    xdccclient.download('Ginpachi-Sensei', ['5845'])
+    fs.readFile(process.cwd()+'\\list.txt', 'utf8', (err, data) => {
+        data.split(/\r?\n/).forEach(item => {
+            xdccclient.download('Ginpachi-Sensei', [item])
+        });
+    });
 
     xdccclient.on('downloaded', fileInfo => {
         console.log(fileInfo.filePath)

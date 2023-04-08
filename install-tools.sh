@@ -2,6 +2,8 @@ apt update
 apt upgrade -y
 apt install npm wget apt-transport-https software-properties-common -y
 npm i xdccjs
+git clone https://github.com/nightshadow92/MegaUpload.git
+
 
 dotnet publish  MegaUpload/MegaUpload.sln --sc true /p:PublishSingleFile=true -o mega
 

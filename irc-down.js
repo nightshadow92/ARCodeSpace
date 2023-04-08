@@ -14,7 +14,7 @@ let opts = {
 const xdccclient = new XDCC(opts)
 
 xdccclient.on('ready', async () => {
-    fs.readFile(process.cwd()+'\\downlist.txt', 'utf8', (err, data) => {
+    fs.readFile(process.cwd()+'/downlist.txt', 'utf8', (err, data) => {
         data.split(/\r?\n/).forEach(item => {
             xdccclient.download('Ginpachi-Sensei', [item])
         });

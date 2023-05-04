@@ -13,7 +13,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 sudo apt update
 sudo apt install -y powershell
-pwsh Download.ps1
+#pwsh Download.ps1
 
 
 

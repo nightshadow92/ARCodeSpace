@@ -22,3 +22,4 @@ apt install ./megacmd*.deb -y
 rm ./megacmd*.deb
 apt install openjdk-8-jre-headless -y
 wget http://installer.jdownloader.org/JDownloader.jar
+echo "" > done.txt

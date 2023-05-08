@@ -1,1 +1,1 @@
-Get-ChildItem ./download -File | foreach {mega-put $_.fullname}
+Get-ChildItem ./Downloads -File | foreach {mega-put $_.fullname}

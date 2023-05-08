@@ -1,1 +1,1 @@
-Get-ChildItem ./Downloads -File | foreach {mega-put $_.fullname}
+Get-ChildItem "/home/codespace/Downloads" -File | foreach {mega-put $_.fullname}

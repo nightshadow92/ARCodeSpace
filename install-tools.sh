@@ -2,8 +2,8 @@ wget -q "https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/package
 sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 apt update
-apt upgrade -y
-apt install npm wget apt-transport-https software-properties-common powershell openjdk-8-jre-headless -y
+DEBIAN_FRONTEND=noninteractive apt upgrade -yq
+DEBIAN_FRONTEND=noninteractive apt install npm wget apt-transport-https software-properties-common powershell openjdk-8-jre-headless -y
 npm i xdccjs
 
 

@@ -23,3 +23,4 @@ wget http://installer.jdownloader.org/JDownloader.jar
 
 
 echo "" > done.txt
+#java -jar JDownloader.jar -norestart

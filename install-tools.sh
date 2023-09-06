@@ -26,5 +26,6 @@ echo steam steam/license note '' | sudo debconf-set-selections
 #rm packages-microsoft-prod.deb
 #git clone https://github.com/nightshadow92/MegaUpload.git
 #dotnet publish  MegaUpload/MegaUpload.sln --sc true /p:PublishSingleFile=true -o mega
+git clone https://git.sr.ht/~blowry/steamarchiver
 
 echo "" > done.txt

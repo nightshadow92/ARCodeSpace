@@ -3,11 +3,11 @@ DEBIAN_FRONTEND=noninteractive apt update && apt upgrade -yq && apt install wget
 # npm i xdccjs
 #openjdk-8-jre-headless no longer needed
 
-# DEBIAN_FRONTEND=noninteractive  add-apt-repository multiverse
-# dpkg --add-architecture i386
-# apt update
-# echo steam steam/question select "I AGREE" | debconf-set-selections echo steam steam/license note '' | debconf
-# DEBIAN_FRONTEND=noninteractive apt install lib32gcc-s1 steamcmd
+DEBIAN_FRONTEND=noninteractive  add-apt-repository multiverse
+dpkg --add-architecture i386
+apt update
+echo steam steam/question select "I AGREE" | debconf-set-selections echo steam steam/license note '' | debconf
+DEBIAN_FRONTEND=noninteractive apt install lib32gcc-s1 steamcmd
 
 # wget https://mega.nz/linux/repo/xUbuntu_20.04/amd64/megacmd-xUbuntu_20.04_amd64.deb
 # apt install ./megacmd*.deb -y

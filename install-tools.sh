@@ -1,12 +1,14 @@
-#DEBIAN_FRONTEND=noninteractive apt update && apt upgrade -yq && apt install wget apt-transport-https tmux software-properties-common powershell -y
+DEBIAN_FRONTEND=noninteractive apt update && apt upgrade -yq && apt install wget apt-transport-https tmux software-properties-common powershell -y
 #DEBIAN_FRONTEND=noninteractive apt install npm -y
 # npm i xdccjs
 #openjdk-8-jre-headless no longer needed
 
-#DEBIAN_FRONTEND=noninteractive add-apt-repository multiverse
-#dpkg --add-architecture i386
-#apt update
+DEBIAN_FRONTEND=noninteractive add-apt-repository multiverse
+dpkg --add-architecture i386
+apt update
 # echo steam steam/question select "I AGREE" | debconf-set-selections echo steam steam/license note '' | debconf
+echo steam steam/question select "I AGREE" | sudo debconf-set-selections
+echo steam steam/license note '' | sudo debconf-set-selections
 # DEBIAN_FRONTEND=noninteractive apt install lib32gcc-s1 steamcmd -y
 
 # wget https://mega.nz/linux/repo/xUbuntu_20.04/amd64/megacmd-xUbuntu_20.04_amd64.deb

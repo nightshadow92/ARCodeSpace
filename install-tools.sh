@@ -9,7 +9,7 @@ apt update
 # echo steam steam/question select "I AGREE" | debconf-set-selections echo steam steam/license note '' | debconf
 echo steam steam/question select "I AGREE" | sudo debconf-set-selections
 echo steam steam/license note '' | sudo debconf-set-selections
-# DEBIAN_FRONTEND=noninteractive apt install lib32gcc-s1 steamcmd -y
+DEBIAN_FRONTEND=noninteractive apt install lib32gcc-s1 steamcmd -y
 
 # wget https://mega.nz/linux/repo/xUbuntu_20.04/amd64/megacmd-xUbuntu_20.04_amd64.deb
 # apt install ./megacmd*.deb -y

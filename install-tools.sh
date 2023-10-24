@@ -9,15 +9,15 @@ DEBIAN_FRONTEND=noninteractive apt update && apt upgrade -yq && apt install wget
 # echo steam steam/question select "I AGREE" | debconf-set-selections echo steam steam/license note '' | debconf
 # DEBIAN_FRONTEND=noninteractive apt install lib32gcc-s1 steamcmd
 
-# wget https://mega.nz/linux/repo/xUbuntu_20.04/amd64/megacmd-xUbuntu_20.04_amd64.deb
-# apt install ./megacmd*.deb -y
-# rm ./megacmd*.deb
+wget https://mega.nz/linux/repo/xUbuntu_20.04/amd64/megacmd-xUbuntu_20.04_amd64.deb
+apt install ./megacmd*.deb -y
+rm ./megacmd*.deb
 
-# wget http://installer.jdownloader.org/JDownloader.jar
-#java -jar JDownloader.jar -norestart
+wget http://installer.jdownloader.org/JDownloader.jar
+# java -jar JDownloader.jar -norestart
 
-# sudo wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -O /usr/local/bin/yt-dlp
-# sudo chmod a+rx /usr/local/bin/yt-dlp  # Make executable
+wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -O /usr/local/bin/yt-dlp
+chmod a+rx /usr/local/bin/yt-dlp  # Make executable
 
 #wget -q "https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/packages-microsoft-prod.deb"
 #sudo dpkg -i packages-microsoft-prod.deb

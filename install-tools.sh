@@ -18,6 +18,7 @@ wget http://installer.jdownloader.org/JDownloader.jar
 
 wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -O /usr/local/bin/yt-dlp
 chmod a+rx /usr/local/bin/yt-dlp  # Make executable
+apt install ffmpeg
 
 #wget -q "https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/packages-microsoft-prod.deb"
 #sudo dpkg -i packages-microsoft-prod.deb

@@ -13,7 +13,8 @@ wget https://mega.nz/linux/repo/xUbuntu_20.04/amd64/megacmd-xUbuntu_20.04_amd64.
 apt install ./megacmd*.deb -y
 rm ./megacmd*.deb
 
-wget http://installer.jdownloader.org/JDownloader.jar
+mkdir jdownloader
+wget http://installer.jdownloader.org/JDownloader.jar -P ./jdownloader
 # java -jar JDownloader.jar -norestart
 
 wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -O /usr/local/bin/yt-dlp

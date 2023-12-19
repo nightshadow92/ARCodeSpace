@@ -2,6 +2,7 @@
 # #DEBIAN_FRONTEND=noninteractive apt install npm -y
 # # npm i xdccjs
 # #openjdk-8-jre-headless no longer needed
+#openjdk-17-jre
 
 # # DEBIAN_FRONTEND=noninteractive  add-apt-repository multiverse
 # # dpkg --add-architecture i386
@@ -16,6 +17,7 @@
 # mkdir jdownloader
 # wget http://installer.jdownloader.org/JDownloader.jar -P ./jdownloader
 # # java -jar JDownloader.jar -norestart
+## java -Djava.awt.headless=true -jar JDownloader.jar -norestart
 
 # wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -O /usr/local/bin/yt-dlp
 # chmod a+rx /usr/local/bin/yt-dlp  # Make executable

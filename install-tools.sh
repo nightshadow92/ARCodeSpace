@@ -1,4 +1,4 @@
-# DEBIAN_FRONTEND=noninteractive apt update && apt upgrade -yq && apt install wget apt-transport-https tmux software-properties-common powershell -y
+DEBIAN_FRONTEND=noninteractive apt update && apt upgrade -yq && apt install wget apt-transport-https tmux software-properties-common powershell -y
 # #DEBIAN_FRONTEND=noninteractive apt install npm -y
 # # npm i xdccjs
 # #openjdk-8-jre-headless no longer needed
@@ -11,13 +11,15 @@
 # # DEBIAN_FRONTEND=noninteractive apt install lib32gcc-s1 steamcmd
 
 # wget https://mega.nz/linux/repo/xUbuntu_20.04/amd64/megacmd-xUbuntu_20.04_amd64.deb
-# apt install ./megacmd*.deb -y
-# rm ./megacmd*.deb
+wget https://mega.nz/linux/repo/Debian_12/amd64/megacmd-Debian_12_amd64.deb
+apt install ./megacmd*.deb -y
+rm ./megacmd*.deb
 
-# mkdir jdownloader
-# wget http://installer.jdownloader.org/JDownloader.jar -P ./jdownloader
-# # java -jar JDownloader.jar -norestart
-## java -Djava.awt.headless=true -jar JDownloader.jar -norestart
+
+mkdir jdownloader
+wget http://installer.jdownloader.org/JDownloader.jar -P ./jdownloader
+# java -jar JDownloader.jar -norestart
+java -Djava.awt.headless=true -jar JDownloader.jar -norestart
 
 # wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -O /usr/local/bin/yt-dlp
 # chmod a+rx /usr/local/bin/yt-dlp  # Make executable

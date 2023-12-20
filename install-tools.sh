@@ -21,9 +21,13 @@ wget http://installer.jdownloader.org/JDownloader.jar -P ./jdownloader
 # java -jar JDownloader.jar -norestart
 java -Djava.awt.headless=true -jar JDownloader.jar -norestart
 
-# wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -O /usr/local/bin/yt-dlp
-# chmod a+rx /usr/local/bin/yt-dlp  # Make executable
-# # apt install ffmpeg -y
+wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -O /usr/local/bin/yt-dlp
+chmod a+rx /usr/local/bin/yt-dlp  # Make executable
+apt install ffmpeg -y
+
+wget https://github.com/PowerShell/PowerShell/releases/download/v7.4.0/powershell_7.4.0-1.deb_amd64.deb
+apt install ./powershell_7*.deb -y
+rm ./powershell_7*.deb
 
 # #wget -q "https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/packages-microsoft-prod.deb"
 # #sudo dpkg -i packages-microsoft-prod.deb

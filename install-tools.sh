@@ -1,5 +1,6 @@
 # DEBIAN_FRONTEND=noninteractive apt update && apt upgrade -yq && apt install wget apt-transport-https tmux software-properties-common powershell -y
 # #DEBIAN_FRONTEND=noninteractive apt install npm -y
+DEBIAN_FRONTEND=noninteractive apt update && apt upgrade -yq && apt install espeak-ng ffmpeg -y
 # # npm i xdccjs
 # #openjdk-8-jre-headless no longer needed
 #openjdk-17-jre
@@ -30,3 +31,9 @@
 # #dotnet publish  MegaUpload/MegaUpload.sln --sc true /p:PublishSingleFile=true -o mega
 
 # echo "" > done.txt
+
+
+
+
+git clone https://github.com/aedocw/epub2tts
+pip install .
